@@ -4,7 +4,7 @@ import appReducers from './../reducers/index';
 
 const configureStore = createStore(
   appReducers,
-  { artists: {},tracks: {} },
+  { artists: {},tracks: {}, activeArtist: null, activeTrack: null },
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

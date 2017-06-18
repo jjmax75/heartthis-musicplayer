@@ -1,8 +1,7 @@
 export default ( state = [], action ) => {
   switch ( action.type ) {
-    case 'UPDATE_ARTISTS_STORE':
-
-      return Object.assign( {}, state, action.userData );
+    case 'SET_ACTIVE_ARTIST':
+      return action.id;
     default:
       return state;
   }
