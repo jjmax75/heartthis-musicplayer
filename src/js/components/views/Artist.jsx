@@ -1,4 +1,4 @@
-import './../../../scss/artist.scss';
+import './../../../scss/artist-details.scss';
 
 import React from 'react';
 
@@ -19,7 +19,7 @@ const buildTrackList = props => {
 
 const Artist = props => {
   return (
-    <div className = 'artist'>
+    <div className = 'artist-details'>
       <h2>Artist</h2>
       <div className = "grid">
         { props.artist.username }

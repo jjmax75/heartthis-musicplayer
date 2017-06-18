@@ -1,5 +1,5 @@
 .artist {
-  background-color: pink;
+  background-color: #d2d7e2;
   display: block;
   margin: 10px 0;
   padding: 10px;
@@ -10,6 +10,7 @@
 
 .artist > div {
   flex: 1 0 50%;
+  padding: 5px;
 }
 
 .artist-name {

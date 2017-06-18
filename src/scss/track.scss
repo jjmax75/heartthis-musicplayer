@@ -1,5 +1,5 @@
 .track {
-  background-color: red;
+  background-color: #d2d7e2;
   display: block;
   margin: 10px 0;
   padding: 10px;
@@ -8,15 +8,15 @@
   flex-wrap: wrap;
 }
 
-.artist > div {
+.track > div {
   flex: 1 0 50%;
 }
 
-.artist-name {
+.track-name {
   flex: 0 1 100%;
 }
 
-.artist-image {
+.track-image {
   max-width: 200px;
   max-height: 200px;
   width: auto;

@@ -23,3 +23,5 @@ not working yet
 future dev -
  - routing
  - intelligent check for data already in app before making an API request
+ - custom build player for better design
+ - design....

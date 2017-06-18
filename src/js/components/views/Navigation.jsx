@@ -8,24 +8,18 @@ const Navigation = props => {
       <span
         className = 'nav-link'
         onClick = { () => props.navClickHandler( 'artistList' ) }
-      >
-        Top Artists
-      </span>
+      >Top Artists</span>
       { props.activeArtist ?
         <span
           className = 'nav-link'
           onClick = { () => props.navClickHandler( 'artist' ) }
-        >
-          Artist
-        </span> : undefined
+        > - Artist</span> : undefined
       }
       { props.activeTrack ?
         <span
           className = 'nav-link'
           onClick = { () => props.navClickHandler( 'player' ) }
-        >
-          Player
-        </span> : undefined
+        > - Player</span> : undefined
       }
     </div>
   );
