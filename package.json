@@ -1,0 +1,12 @@
+{
+  "name": "mimi",
+  "version": "1.0.0",
+  "description": "Music player for Mimi Hearing Technologies",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Behan <behanj@gmail.com> (http://boxitoff.com)",
+  "license": "UNLICENSED",
+  "private": true
+}
