@@ -1,5 +1,7 @@
-export const fetchTopArtists = ( path, store ) => {
-  fetch( path, {
+export const fetchTopArtists = () => {
+  let path = 'https://api-v2.hearthis.at/feed/?type=popular&page=1&count=20';
+
+  return fetch( path, {
     method: 'get'
   }).then( response => {
     // parse response to json
@@ -15,10 +17,9 @@ export const fetchTopArtists = ( path, store ) => {
   }).then( permalinks => {
     // build fetch requests from permalinks
     return Promise.all( permalinks.map( permalink => {
-      const request = fetch('https://api-v2.hearthis.at/' + permalink + '/' );
+      const request = fetch(`https://api-v2.hearthis.at/${ permalink }/` );
       return request;
     }));
-    // return users;
   }).then( responses => {
     // parse responses
     return Promise.all( responses.map( response => {
@@ -29,7 +30,7 @@ export const fetchTopArtists = ( path, store ) => {
   }).then( users => {
     let userData = {};
     users.forEach( user => userData[ user.id ] = user );
-    store.dispatch({ type: 'UPDATE_ARTISTS_STORE', userData })
+    return userData;
   }).catch( error => {
     console.log( 'error:', error );
   })

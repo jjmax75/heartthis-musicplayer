@@ -7,7 +7,7 @@ const Item = props => {
   return (
     <div
       className = 'artist'
-      onClick = { event => props.artistClickHandler ( props.id ) }
+      onClick = { event => props.artistClickHandler ( props.id, props.permalink ) }
     >
       <h3 className = "artist-name">{ props.username }</h3>
       <img className = "artist-image" src = { props.avatar_url } />

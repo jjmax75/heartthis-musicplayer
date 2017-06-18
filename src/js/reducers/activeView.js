@@ -1,10 +1,10 @@
 export default ( state = [], action ) => {
   switch ( action.type ) {
-    case 'SET_ACTIVE_ARTIST':
+    case 'SET_ACTIVE_VIEW':
 
-      return action.id;
+      return action.view;
     default:
-    
+
       return state;
   }
 }

@@ -1,0 +1,24 @@
+.track {
+  background-color: red;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.artist > div {
+  flex: 1 0 50%;
+}
+
+.artist-name {
+  flex: 0 1 100%;
+}
+
+.artist-image {
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}

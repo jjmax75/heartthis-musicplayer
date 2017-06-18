@@ -1,6 +1,8 @@
 import { connect } from 'react-redux';
 
-// import { getArtists } from './../../actions';
+import { setActiveArtist, setArtistTracks, setActiveView } from './../../actions';
+
+import { fetchArtistTracks } from './../../helpers/fetchArtistTracks';
 
 import ArtistList from './../views/ArtistList';
 
@@ -9,10 +11,15 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  artistClickHandler: ( id ) => {
-    console.log( id, 'clicked' );
-    dispatch({ type: 'SET_ACTIVE_ARTIST', id })
-  }
+  artistClickHandler: ( ( id, permalink ) => {
+    // set the active artist
+    dispatch( setActiveArtist( id ) );
+    dispatch( setActiveView( 'artist') );
+
+    // get the artist's tracks
+    fetchArtistTracks( permalink )
+      .then( tracks => dispatch( setArtistTracks( id, tracks ) ) );
+  })
 });
 
 export default connect(
