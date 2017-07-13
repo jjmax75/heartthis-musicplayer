@@ -1,5 +1,70 @@
 body {
-  background-color: #eee; }
+  background-color: #e2e2e2;
+  color: #353434;
+  font-size: 20px; }
 .app {
   max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: 'Work Sans', sans-serif; }
+
+h1, h2, h3 {
+  font-family: 'Eczar', serif; }
+.artist-list {
+  background-color: #247ba0;
+  padding: 10px; }
+.artist {
+  background-color: #d2d7e2;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.artist > div {
+  flex: 1 0 50%;
+  padding: 5px; }
+
+.artist-name {
+  flex: 0 1 100%; }
+
+.artist-image {
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto; }
+.artist-details {
+  background-color: #247ba0;
+  padding: 10px; }
+.track {
+  background-color: #d2d7e2;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.track > div {
+  flex: 1 0 50%; }
+
+.track-name {
+  flex: 0 1 100%; }
+
+.track-image {
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto; }
+.player {
+  background-color: #353434;
+  color: #d2d732;
+  padding: 10px; }
+
+.react-audio-player {
+  width: 100%; }
+.navigation {
+  padding: 10px;
+  background-color: #891e23;
+  font-size: 1.6em;
+  color: #e2e2e2; }

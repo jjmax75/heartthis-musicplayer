@@ -1,7 +1,7 @@
 {
   "name": "mimi",
   "version": "1.0.0",
-  "description": "Music player for Mimi Hearing Technologies",
+  "description": "Music player for heartthis.at api",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --progress"
