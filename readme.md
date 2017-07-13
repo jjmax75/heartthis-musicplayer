@@ -1,12 +1,12 @@
-To run app - npm start or npm build to create bundle
+*to run app - npm start or npm build to create bundle*
 
-##Built using
+### built using
 - React
 - Redux
 - Webpack
 - React Audio Player (wrapper for html5 audio API)
 
-##Requirements
+### requirements
 
 View enclosed PDF.
 
@@ -21,18 +21,18 @@ I will display a list of the users that created the content on heart this at
 Call for individual user tracks -
 https://api-v2.hearthis.at/<permalink>/?type=tracks&page=1&count=20
 
-##todo
+### todo
  - background play when navigate to other artists, etc....
  - prefetch and pagination
  - clean up style and UX
 
-##future dev
+### future dev
  - routing
  - intelligent check for data already in app before making an API request
  - custom build player for better design
  - design....
 
-##background
+### background
 
 A coding demo for Mimi Technologies, Berlin.
 
